@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo img {
+  height: 2vw;
+}
+
+.nav-links ul {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul i {
+  display: none;
+}
+
+.nav-links ul .language ul {
+  gap: 10px;
+}
+
+.categories {
+  width: 100%;
+  height: 5vh;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.categories ul {
+  gap: 60px;
+  display: flex;
+}
+
+section.brands {
+  height: 40vh;
+  padding: 40px;
+  display: flex;
+  overflow-x: auto;
+}
+
+section.brands::-webkit-scrollbar {
+  height: .5vw;
+  background-color: transparent;
+}
+
+section.brands::-webkit-scrollbar-thumb {
+  background-color: orangered;
+}
+
+section.brands h1 {
+  width: 60%;
+  height: 100%;
+  flex-shrink: 0;
+  font-size: 6vw;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+section.images {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  overflow-x: auto;
+}
+
+section.images::-webkit-scrollbar {
+  display: none;
+}
+
+section.images img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: 0 30%;
+}
+
+@media (max-width:600px) {
+  nav {
+    height: 10vh;
+    padding: 0 20px;
+  }
+  
+  .brand-logo img {
+    height: 6vw;
+  }
+
+  .nav-links ul {
+    gap: 20px;
+  }
+
+  .nav-links ul i {
+    display: block;
+  }
+
+  .nav-links ul li {
+    display: none;
+  }
+  
+  .nav-links ul .language ul li {
+    display: block;
+  }
+  
+  .categories {
+    padding: 0 20px;
+    overflow-x: auto;
+  }
+
+  .categories ul li a {
+    font-size: 3.5vw;
+  }
+
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .categories ul {
+    gap: 20px;
+  }
+  
+  section.brands {
+    height: 40vh;
+    padding: 20px;
+  }
+  
+  section.brands::-webkit-scrollbar {
+    height: .8vw;
+    background-color: transparent;
+  }
+  
+  section.brands::-webkit-scrollbar-thumb {
+    background-color: orangered;
+  }
+  
+  section.brands h1 {
+    width: 80%;
+    font-size: 10vw;
+  }
+}
